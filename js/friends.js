@@ -12,15 +12,16 @@ var friends = [
     {name: "Robert", favcolor: "purple", favnumber: 31},
     {name: "Phillip", favcolor: "green", favnumber: 13},
     {name: "Sheila", favcolor: "purple", favnumber: 17},
-    {name: "Rachael", favcolor: "black", favnumber: 66},
+    {name: "Rachael", favcolor: "black", favnumber: 66}
 ];
 
 $().ready(function(){
 
     var tbody=$("#tb");
 
-    for(var friend of friends) {
-//one row in a table being run again and again. Being appended as a child tag.
+    tbody.empty(); //clears the data at brower refresh
+    for(var friend of friends) { //for loop/ whan to use "of" almost all the time
+        //one row in a table being run again and again. Being appended as a child tag.
         var row = "<tr>";
         row += "<td>" + friend.name + "</td>";
         row += "<td>" + friend.favcolor + "</td>";
