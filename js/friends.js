@@ -23,6 +23,7 @@ $().ready(function(){
     for(var friend of friends) { //for loop/ whan to use "of" almost all the time
         //one row in a table being run again and again. Being appended as a child tag.
         var row = "<tr>";
+        //row=+ appends a row onto what exists in the tbody
         row += "<td>" + friend.name + "</td>";
         row += "<td>" + friend.favcolor + "</td>";
         row += "<td>" + friend.favnumber + "</td>";
